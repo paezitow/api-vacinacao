@@ -22,7 +22,7 @@ public class ConfiguracaoSwagger {
 	public Docket vacinaApi() {
 		return new Docket(DocumentationType.SWAGGER_2)
 				.select()
-				.apis(RequestHandlerSelectors.basePackage("net.vacina.apicadastro"))
+				.apis(RequestHandlerSelectors.basePackage("com.vacinacao.APIvacinacao"))
 				.paths(regex("/api.*"))
 				.build()
 				.apiInfo(metaInfo());
